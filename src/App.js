@@ -1,9 +1,8 @@
 
 import './App.css';
 import DeriveCard from './deriveCard';
-import menuItems from './navItems';
-import MenuItem from './Components/DropdownButton/MenuItem';
 import TextInput2 from './Components/TextInput2'
+import Dropdown from './Components/DropdownButton/Dropdown';
 function App() {
   const options = [
     {
@@ -51,19 +50,149 @@ const options2 = [
   }
 ];
 
+const menuItems = [
+  {
+      title: 'text 1',
+      submenu: [
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 1',
+              link: 'google.com',
+          },
+      ]
+  },
+
+  {
+      title: 'text 2',
+      submenu: [
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 2',
+              link: 'google.com',
+          },
+      ]
+  },
+  {
+      title: 'text 3',
+      submenu: [
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 3',
+              link: 'google.com',
+          },
+      ]
+  },
+  {
+      title: 'text 4',
+      submenu: [
+
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+          {
+              title: 'submenu text 4',
+              link: 'google.com',
+          },
+      ]
+  },
+
+]
   return (
     <main className='font-inter'>
-      <nav className='z-10 w-full bg-white border-b-[1px] border-gray-100 drop-shadow-sm '>
-        <ul className='flex justify-around'>
-          {menuItems?.map((items, i) => {
-            return <MenuItem
-            role  = 'menu'
-              depthLevel={0}
-              items={items}
-              key={i} />
-          })}
-        </ul>
-      </nav>
+      <header> 
+        <Dropdown buttonText={"whatever"} menuItems = {menuItems}/>
+        <Dropdown buttonText={"Button2"} menuItems = {menuItems}/>
+      </header>
      <DeriveCard/>
       <div className='flex flex-col'>
           <div>Text Input</div>

@@ -30,10 +30,11 @@ const TextInput2=({options})=>{
                         }else if(item.title.toLowerCase().includes(search.toLowerCase())){
                             return item;
                         }   
+                        return null;
                     }).map((item,i)=>{
                         return (
                             <div>
-                                { <p className = "hover:bg-blue-100 hover:text-blue-600 h-[2.2rem] w-full " key = {i}><a target = '_blank' href = {'//' + item.link}>{item.title}</a></p>}
+                                { <p className = "hover:bg-blue-100 hover:text-blue-600 h-[2.2rem] w-full " key = {i}><a target = '_blank' rel = "noreferrer" href = {'//' + item.link}>{item.title}</a></p>}
                             </div>
                        
                         )

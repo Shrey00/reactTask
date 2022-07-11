@@ -11,7 +11,7 @@ const DeriveCard = () => {
                 duration={"6 months"}
                 applyBy={"10 July"}
                 stipend={10000}
-                chipText={["internship", "paid"]}
+                chipText={["internship", "paid", "not paid"]}
                 logo={logo}
                 buttonUrl={"#"} />
 
