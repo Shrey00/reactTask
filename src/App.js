@@ -2,6 +2,8 @@
 import './App.css';
 import DeriveCard from './deriveCard';
 import TextInput2 from './Components/TextInput2'
+import TextInputSelect from './Components/TextInputSelect';
+
 import Dropdown from './Components/DropdownButton/Dropdown';
 function App() {
   const options = [
@@ -196,11 +198,8 @@ const menuItems = [
      <DeriveCard/>
       <div className='flex flex-col'>
           <div>Text Input</div>
-          <div className='m-12'>
-            <TextInput2 options = {options}/>
-          </div>
-          <div className='m-12'>
-            <TextInput2 options = {options2}/>
+          <div className = "m-auto">
+            <TextInputSelect options = {options2}/>
           </div>
       </div>
           </main>
