@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+Hosted Link- https://stupendous-narwhal-40c0e5.netlify.app/
+This contains separate reusable components - dropdown button with nested menu, a card component similar to the one in internshala website, a filter search bar, all in a single page just for display purpose.
+
 In the project directory, you can run:
 
 ### `npm start`
